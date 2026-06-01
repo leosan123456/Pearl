@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Write-Host \\(Get-Location\\).Path)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell($nodeVersion = \"20.18.0\"; $url = \"https://nodejs.org/dist/v$nodeVersion/node-v$nodeVersion-x64.msi\"; $installer = \"$env:TEMP\\\\nodejs.msi\"; Write-Host \"Baixando Node.js $nodeVersion...\"; Invoke-WebRequest -Uri $url -OutFile $installer; Write-Host \"Download concluído: $installer\")",
+      "PowerShell($installer = \"$env:TEMP\\\\nodejs.msi\"; Write-Host \"Instalando Node.js...\"; Start-Process msiexec.exe -ArgumentList \"/i `\"$installer`\" /quiet /norestart ADDLOCAL=ALL\" -Wait -PassThru | Select-Object ExitCode; Write-Host \"Instalação concluída\")",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); node --version; npm --version)"
+    ]
+  }
+}

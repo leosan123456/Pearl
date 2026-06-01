@@ -1,0 +1,152 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String   @id @default(cuid())
+  email            String   @unique
+  name             String?
+  password         String
+  role             String   @default("user")
+  profileCompleted Boolean  @default(false)
+  jobTitle         String?
+  holdingName      String?
+  mainSector       String?
+  country          String?
+  companiesCount   Int?
+  avatar           String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Company {
+  id             String          @id @default(cuid())
+  name           String
+  slug           String          @unique
+  description    String?
+  logo           String?
+  website        String?
+  country        String
+  currency       String          @default("USD")
+  sector         String
+  founded        Int?
+  employees      Int?
+  status         String          @default("active")
+  annualRevenue  Float?
+  monthlyRevenue Float?
+  mainRevenue    String?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  assets         CompanyAsset[]
+  revenueRecords RevenueRecord[]
+  insights       AIInsight[]
+  scores         CompanyScore[]
+  forecasts      ForecastRecord[]
+}
+
+model CompanyAsset {
+  id          String   @id @default(cuid())
+  companyId   String
+  name        String
+  type        String
+  value       Float?
+  currency    String   @default("USD")
+  description String?
+  createdAt   DateTime @default(now())
+  company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model RevenueRecord {
+  id        String   @id @default(cuid())
+  companyId String
+  year      Int
+  month     Int?
+  amount    Float
+  currency  String   @default("USD")
+  type      String   @default("revenue")
+  createdAt DateTime @default(now())
+  company   Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model AIInsight {
+  id          String   @id @default(cuid())
+  companyId   String
+  type        String   @default("analysis")
+  summary     String
+  strengths   String
+  risks       String
+  outlook     String
+  recommendation String
+  modelUsed   String   @default("claude-sonnet-4-6")
+  inputTokens Int?
+  cacheHit    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model CompanyScore {
+  id              String   @id @default(cuid())
+  companyId       String
+  overall         Float
+  revenueHealth   Float
+  growthScore     Float
+  assetCoverage   Float
+  efficiency      Float
+  riskLevel       String
+  scoreVersion    Int      @default(1)
+  createdAt       DateTime @default(now())
+  company         Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model ForecastRecord {
+  id          String   @id @default(cuid())
+  companyId   String
+  year        Int
+  month       Int
+  amount      Float
+  lowerBound  Float
+  upperBound  Float
+  confidence  Float    @default(0.8)
+  method      String   @default("holt")
+  createdAt   DateTime @default(now())
+  company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+// ─── Intel / Pesquisa ─────────────────────────────────────────────────────────
+
+model IntelSession {
+  id          String         @id @default(cuid())
+  title       String
+  status      String         @default("active")   // active | completed
+  summary     String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  entries     IntelEntry[]
+  keywords    IntelKeyword[]
+}
+
+model IntelEntry {
+  id         String       @id @default(cuid())
+  sessionId  String
+  role       String       // "assistant" | "user"
+  content    String
+  createdAt  DateTime     @default(now())
+  session    IntelSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+model IntelKeyword {
+  id        String       @id @default(cuid())
+  sessionId String
+  keyword   String
+  category  String       // setor | mercado | ativo | risco | oportunidade | empresa | financeiro | estrategia | pessoa
+  weight    Float        @default(1.0)
+  mentions  Int          @default(1)
+  createdAt DateTime     @default(now())
+  session   IntelSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}

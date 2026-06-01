@@ -1,0 +1,22 @@
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.101:3000
+- Environments: .env
+✓ Ready in 709ms
+
+ GET / 200 in 4.1s (next.js: 3.0s, proxy.ts: 563ms, application-code: 551ms)
+ GET / 200 in 203ms (next.js: 9ms, proxy.ts: 39ms, application-code: 156ms)
+ GET /login 200 in 812ms (next.js: 734ms, proxy.ts: 23ms, application-code: 54ms)
+ GET /api/auth/providers 200 in 2.1s (next.js: 2.0s, proxy.ts: 18ms, application-code: 36ms)
+ GET /api/auth/csrf 200 in 52ms (next.js: 20ms, proxy.ts: 17ms, application-code: 15ms)
+ POST /api/auth/callback/credentials? 200 in 444ms (next.js: 10ms, proxy.ts: 19ms, application-code: 414ms)
+ GET /dashboard 200 in 1571ms (next.js: 1171ms, proxy.ts: 15ms, application-code: 385ms)
+ GET /dashboard 200 in 221ms (next.js: 11ms, proxy.ts: 89ms, application-code: 121ms)
+ GET /api/auth/session 200 in 66ms (next.js: 17ms, proxy.ts: 23ms, application-code: 25ms)
+ GET /api/auth/session 200 in 41ms (next.js: 8ms, proxy.ts: 18ms, application-code: 14ms)
+ GET /api/auth/session 200 in 43ms (next.js: 9ms, proxy.ts: 14ms, application-code: 20ms)
+ GET /api/auth/session 200 in 42ms (next.js: 10ms, proxy.ts: 16ms, application-code: 16ms)
+ GET /dashboard/companies 200 in 787ms (next.js: 701ms, proxy.ts: 15ms, application-code: 71ms)
+ GET /dashboard/ai 200 in 601ms (next.js: 499ms, proxy.ts: 18ms, application-code: 84ms)
+ GET /dashboard 200 in 87ms (next.js: 6ms, proxy.ts: 15ms, application-code: 66ms)
+ GET /dashboard/companies 200 in 83ms (next.js: 6ms, proxy.ts: 16ms, application-code: 60ms)
