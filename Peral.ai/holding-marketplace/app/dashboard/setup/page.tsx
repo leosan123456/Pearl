@@ -49,7 +49,7 @@ export default function SetupPage() {
 
   const finish = async () => {
     setSaving(true);
-    const res = await fetch("/api/profile", {
+    const res = await fetch("/api/profile/complete", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...form, companiesCount: Number(form.companiesCount) }),

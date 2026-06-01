@@ -18,9 +18,15 @@ model User {
   jobTitle         String?
   holdingName      String?
   mainSector       String?
+  mainSubSector    String?
   country          String?
   companiesCount   Int?
   avatar           String?
+  phone            String?
+  bio              String?
+  investmentStage  String?
+  fundSize         Float?
+  focusSectors     String?
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { TrendingUp, Globe, Users, Calendar, ArrowUpRight } from "lucide-react";
 import { Company } from "@/types";
 import { formatCurrency, formatNumber } from "@/lib/utils";
@@ -45,12 +46,24 @@ export default function CompanyCard({ company }: { company: Company }) {
       >
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-3">
-            <div
-              className="w-11 h-11 rounded-xl flex items-center justify-center text-lg font-bold flex-shrink-0"
-              style={{ background: sectorColor + "20", color: sectorColor }}
-            >
-              {company.name.charAt(0)}
-            </div>
+            {company.logo ? (
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center text-lg font-bold flex-shrink-0 bg-white/5">
+                <Image
+                  src={company.logo}
+                  alt={company.name}
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain rounded-xl"
+                />
+              </div>
+            ) : (
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center text-lg font-bold flex-shrink-0"
+                style={{ background: sectorColor + "20", color: sectorColor }}
+              >
+                {company.name.charAt(0)}
+              </div>
+            )}
             <div>
               <h3 className="font-semibold text-sm leading-tight" style={{ color: "var(--text-primary)" }}>
                 {company.name}
