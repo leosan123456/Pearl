@@ -1,0 +1,980 @@
+
+> holding-marketplace@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.101:3000
+- Environments: .env
+✓ Ready in 638ms
+
+ GET /login 200 in 763ms (next.js: 142ms, proxy.ts: 341ms, application-code: 280ms)
+ GET /login 200 in 196ms (next.js: 35ms, proxy.ts: 23ms, application-code: 138ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 143ms (next.js: 9ms, proxy.ts: 11ms, application-code: 123ms)
+ GET /login 200 in 194ms (next.js: 5ms, proxy.ts: 19ms, application-code: 170ms)
+ GET /login 200 in 168ms (next.js: 34ms, proxy.ts: 37ms, application-code: 97ms)
+ GET /login 200 in 82ms (next.js: 5ms, proxy.ts: 10ms, application-code: 68ms)
+ GET /login 200 in 185ms (next.js: 8ms, proxy.ts: 11ms, application-code: 165ms)
+ GET /login 200 in 154ms (next.js: 27ms, proxy.ts: 26ms, application-code: 101ms)
+ GET /login 200 in 179ms (next.js: 11ms, proxy.ts: 15ms, application-code: 153ms)
+ GET /login 200 in 329ms (next.js: 124ms, proxy.ts: 14ms, application-code: 191ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 181ms (next.js: 29ms, proxy.ts: 56ms, application-code: 97ms)
+ GET /login 200 in 78ms (next.js: 6ms, proxy.ts: 13ms, application-code: 60ms)
+ GET /login 200 in 200ms (next.js: 8ms, proxy.ts: 10ms, application-code: 182ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/login" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="login/page...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
+                <LoginPage params={Promise} searchParams={Promise}>
+                  <style>
+                  <div style={{position:"...", ...}}>
+                    <video>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div style={{position:"...", ...}}>
+                      <div>
+                      <div className="login-card" style={{...}}>
+                        <form onSubmit={function handleSubmit} style={{display:"flex", ...}}>
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Mail>
+                              <input
+                                type="email"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="admin@pearl.ai"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Lock>
+                              <input
+                                type="password"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="••••••••"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          ...
+                        ...
+                      ...
+            ...
+          ...
+ 
+ GET /login 200 in 192ms (next.js: 33ms, proxy.ts: 28ms, application-code: 130ms)
+ GET /login 200 in 124ms (next.js: 9ms, proxy.ts: 19ms, application-code: 96ms)
+ GET /login 200 in 241ms (next.js: 71ms, proxy.ts: 12ms, application-code: 159ms)
+ GET /login 200 in 210ms (next.js: 32ms, proxy.ts: 18ms, application-code: 160ms)
+ GET /login 200 in 117ms (next.js: 8ms, proxy.ts: 21ms, application-code: 88ms)
+ GET /login 200 in 223ms (next.js: 33ms, proxy.ts: 38ms, application-code: 151ms)
+ GET /login 200 in 547ms (next.js: 123ms, proxy.ts: 177ms, application-code: 247ms)
+ GET /login 200 in 149ms (next.js: 18ms, proxy.ts: 20ms, application-code: 110ms)
+ GET /login 200 in 111ms (next.js: 8ms, proxy.ts: 7ms, application-code: 96ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 91ms (next.js: 5ms, proxy.ts: 7ms, application-code: 79ms)
+ GET /login 200 in 162ms (next.js: 9ms, proxy.ts: 11ms, application-code: 142ms)
+ GET /login 200 in 166ms (next.js: 5ms, proxy.ts: 8ms, application-code: 154ms)
+ GET /login 200 in 197ms (next.js: 46ms, proxy.ts: 53ms, application-code: 98ms)
+ GET /login 200 in 81ms (next.js: 4ms, proxy.ts: 8ms, application-code: 69ms)
+ GET /login 200 in 191ms (next.js: 9ms, proxy.ts: 11ms, application-code: 171ms)
+ GET /login 200 in 185ms (next.js: 60ms, proxy.ts: 42ms, application-code: 83ms)
+ GET /login 200 in 78ms (next.js: 4ms, proxy.ts: 8ms, application-code: 67ms)
+ GET /login 200 in 182ms (next.js: 9ms, proxy.ts: 11ms, application-code: 161ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 252ms (next.js: 56ms, proxy.ts: 46ms, application-code: 150ms)
+ GET /login 200 in 72ms (next.js: 5ms, proxy.ts: 9ms, application-code: 58ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/login" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="login/page...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
+                <LoginPage params={Promise} searchParams={Promise}>
+                  <style>
+                  <div style={{position:"...", ...}}>
+                    <video>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div style={{position:"...", ...}}>
+                      <div>
+                      <div className="login-card" style={{...}}>
+                        <form onSubmit={function handleSubmit} style={{display:"flex", ...}}>
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Mail>
+                              <input
+                                type="email"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="admin@pearl.ai"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Lock>
+                              <input
+                                type="password"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="••••••••"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          ...
+                        ...
+                      ...
+            ...
+          ...
+ 
+ GET /login 200 in 206ms (next.js: 49ms, proxy.ts: 56ms, application-code: 102ms)
+ GET /login 200 in 182ms (next.js: 4ms, proxy.ts: 12ms, application-code: 165ms)
+ GET /login 200 in 167ms (next.js: 24ms, proxy.ts: 51ms, application-code: 93ms)
+ GET /login 200 in 90ms (next.js: 9ms, proxy.ts: 17ms, application-code: 64ms)
+ GET /login 200 in 199ms (next.js: 17ms, proxy.ts: 61ms, application-code: 120ms)
+ GET /login 200 in 529ms (next.js: 135ms, proxy.ts: 162ms, application-code: 232ms)
+ GET /login 200 in 176ms (next.js: 16ms, proxy.ts: 18ms, application-code: 142ms)
+ GET /login 200 in 102ms (next.js: 5ms, proxy.ts: 8ms, application-code: 88ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 83ms (next.js: 4ms, proxy.ts: 11ms, application-code: 69ms)
+ GET /login 200 in 149ms (next.js: 4ms, proxy.ts: 7ms, application-code: 138ms)
+ GET /login 200 in 121ms (next.js: 4ms, proxy.ts: 7ms, application-code: 110ms)
+ GET /login 200 in 166ms (next.js: 43ms, proxy.ts: 18ms, application-code: 104ms)
+ GET /login 200 in 109ms (next.js: 8ms, proxy.ts: 16ms, application-code: 85ms)
+ GET /login 200 in 247ms (next.js: 32ms, proxy.ts: 36ms, application-code: 179ms)
+ GET /login 200 in 188ms (next.js: 57ms, proxy.ts: 50ms, application-code: 82ms)
+ GET /login 200 in 119ms (next.js: 7ms, proxy.ts: 13ms, application-code: 99ms)
+ GET /login 200 in 261ms (next.js: 72ms, proxy.ts: 11ms, application-code: 178ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 168ms (next.js: 38ms, proxy.ts: 34ms, application-code: 97ms)
+ GET /login 200 in 138ms (next.js: 9ms, proxy.ts: 16ms, application-code: 113ms)
+ GET /login 200 in 237ms (next.js: 58ms, proxy.ts: 12ms, application-code: 166ms)
+ GET /login 200 in 155ms (next.js: 26ms, proxy.ts: 26ms, application-code: 102ms)
+ GET /login 200 in 116ms (next.js: 8ms, proxy.ts: 14ms, application-code: 94ms)
+ GET /login 200 in 105ms (next.js: 9ms, proxy.ts: 20ms, application-code: 77ms)
+ GET /login 200 in 292ms (next.js: 42ms, proxy.ts: 72ms, application-code: 177ms)
+ GET /login 200 in 81ms (next.js: 4ms, proxy.ts: 12ms, application-code: 64ms)
+ GET /login 200 in 144ms (next.js: 9ms, proxy.ts: 17ms, application-code: 119ms)
+ GET /login 200 in 117ms (next.js: 5ms, proxy.ts: 11ms, application-code: 101ms)
+ GET /login 200 in 147ms (next.js: 24ms, proxy.ts: 12ms, application-code: 111ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 85ms (next.js: 6ms, proxy.ts: 7ms, application-code: 72ms)
+ GET /login 200 in 206ms (next.js: 4ms, proxy.ts: 17ms, application-code: 185ms)
+ GET /login 200 in 140ms (next.js: 20ms, proxy.ts: 26ms, application-code: 94ms)
+ GET /login 200 in 114ms (next.js: 18ms, proxy.ts: 13ms, application-code: 84ms)
+ GET /login 200 in 203ms (next.js: 15ms, proxy.ts: 22ms, application-code: 166ms)
+ GET /login 200 in 206ms (next.js: 19ms, proxy.ts: 49ms, application-code: 137ms)
+ GET /login 200 in 84ms (next.js: 4ms, proxy.ts: 10ms, application-code: 70ms)
+ GET /login 200 in 157ms (next.js: 9ms, proxy.ts: 21ms, application-code: 127ms)
+ GET /login 200 in 102ms (next.js: 4ms, proxy.ts: 7ms, application-code: 91ms)
+ GET /login 200 in 141ms (next.js: 24ms, proxy.ts: 17ms, application-code: 101ms)
+ GET /login 200 in 114ms (next.js: 5ms, proxy.ts: 7ms, application-code: 102ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 169ms (next.js: 3ms, proxy.ts: 12ms, application-code: 154ms)
+ GET /login 200 in 157ms (next.js: 35ms, proxy.ts: 26ms, application-code: 97ms)
+ GET /login 200 in 110ms (next.js: 9ms, proxy.ts: 12ms, application-code: 89ms)
+ GET /login 200 in 236ms (next.js: 61ms, proxy.ts: 9ms, application-code: 166ms)
+ GET /login 200 in 252ms (next.js: 135ms, proxy.ts: 51ms, application-code: 65ms)
+ GET /login 200 in 154ms (next.js: 4ms, proxy.ts: 8ms, application-code: 142ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 150ms (next.js: 6ms, proxy.ts: 59ms, application-code: 85ms)
+ GET /login 200 in 73ms (next.js: 4ms, proxy.ts: 10ms, application-code: 59ms)
+ GET /login 200 in 170ms (next.js: 11ms, proxy.ts: 11ms, application-code: 149ms)
+ GET /login 200 in 180ms (next.js: 29ms, proxy.ts: 30ms, application-code: 120ms)
+ GET /login 200 in 97ms (next.js: 4ms, proxy.ts: 11ms, application-code: 81ms)
+ GET /login 200 in 758ms (next.js: 238ms, proxy.ts: 166ms, application-code: 354ms)
+ GET /login 200 in 154ms (next.js: 22ms, proxy.ts: 19ms, application-code: 113ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 238ms (next.js: 108ms, proxy.ts: 8ms, application-code: 122ms)
+ GET /login 200 in 331ms (next.js: 14ms, proxy.ts: 17ms, application-code: 300ms)
+ GET /login 200 in 308ms (next.js: 148ms, proxy.ts: 52ms, application-code: 107ms)
+ GET /login 200 in 381ms (next.js: 29ms, proxy.ts: 12ms, application-code: 340ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/login" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="login/page...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
+                <LoginPage params={Promise} searchParams={Promise}>
+                  <style>
+                  <div style={{position:"...", ...}}>
+                    <video>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div style={{position:"...", ...}}>
+                      <div>
+                      <div className="login-card" style={{...}}>
+                        <form onSubmit={function handleSubmit} style={{display:"flex", ...}}>
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Mail>
+                              <input
+                                type="email"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="admin@pearl.ai"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          <div>
+                            <label>
+                            <div style={{position:"..."}}>
+                              <Lock>
+                              <input
+                                type="password"
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                                placeholder="••••••••"
+                                style={{
++                                 width: "100%"
+-                                 width: "100%"
++                                 paddingLeft: 44
++                                 paddingRight: 16
++                                 paddingTop: 14
++                                 paddingBottom: 14
++                                 borderRadius: 14
++                                 fontSize: 14
++                                 outline: "none"
++                                 background: "rgba(255,255,255,.055)"
++                                 border: "1px solid rgba(255,255,255,.09)"
++                                 color: "#fff"
+-                                 color: "rgb(255, 255, 255)"
++                                 transition: "all .2s"
++                                 caretColor: "#8aa26a"
+-                                 padding-left: "44px"
+-                                 padding-right: "16px"
+-                                 padding-top: "14px"
+-                                 padding-bottom: "14px"
+-                                 border-top-left-radius: "14px"
+-                                 border-top-right-radius: "14px"
+-                                 border-bottom-right-radius: "14px"
+-                                 border-bottom-left-radius: "14px"
+-                                 font-size: "14px"
+-                                 outline-color: "initial"
+-                                 outline-style: "none"
+-                                 outline-width: "initial"
+-                                 background-image: "initial"
+-                                 background-position-x: "initial"
+-                                 background-position-y: "initial"
+-                                 background-size: "initial"
+-                                 background-repeat: "initial"
+-                                 background-attachment: "initial"
+-                                 background-origin: "initial"
+-                                 background-clip: "initial"
+-                                 background-color: "rgba(255, 255, 255, 0.055)"
+-                                 border-top-width: "1px"
+-                                 border-right-width: "1px"
+-                                 border-bottom-width: "1px"
+-                                 border-left-width: "1px"
+-                                 border-top-style: "solid"
+-                                 border-right-style: "solid"
+-                                 border-bottom-style: "solid"
+-                                 border-left-style: "solid"
+-                                 border-top-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-right-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-bottom-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-left-color: "rgba(255, 255, 255, 0.09)"
+-                                 border-image-source: "initial"
+-                                 border-image-slice: "initial"
+-                                 border-image-width: "initial"
+-                                 border-image-outset: "initial"
+-                                 border-image-repeat: "initial"
+-                                 transition-behavior: "normal"
+-                                 transition-duration: "0.2s"
+-                                 transition-timing-function: "ease"
+-                                 transition-delay: "0s"
+-                                 transition-property: "all"
+-                                 caret-color: "transparent"
+                                }}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                              >
+                          ...
+                        ...
+                      ...
+            ...
+          ...
+ 
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 303ms (next.js: 93ms, proxy.ts: 32ms, application-code: 179ms)
+ GET /login 200 in 187ms (next.js: 14ms, proxy.ts: 31ms, application-code: 143ms)
+ GET /login 200 in 672ms (next.js: 165ms, proxy.ts: 16ms, application-code: 491ms)
+ GET /login 200 in 327ms (next.js: 70ms, proxy.ts: 79ms, application-code: 178ms)
+ GET /login 200 in 645ms (next.js: 187ms, proxy.ts: 174ms, application-code: 285ms)
+ GET /login 200 in 173ms (next.js: 31ms, proxy.ts: 25ms, application-code: 117ms)
+ GET /login 200 in 141ms (next.js: 8ms, proxy.ts: 9ms, application-code: 124ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 228ms (next.js: 6ms, proxy.ts: 14ms, application-code: 208ms)
+ GET /login 200 in 205ms (next.js: 65ms, proxy.ts: 41ms, application-code: 99ms)
+ GET /login 200 in 212ms (next.js: 4ms, proxy.ts: 10ms, application-code: 198ms)
+ GET /login 200 in 199ms (next.js: 36ms, proxy.ts: 38ms, application-code: 125ms)
+ GET /login 200 in 134ms (next.js: 9ms, proxy.ts: 16ms, application-code: 109ms)
+ GET /login 200 in 308ms (next.js: 71ms, proxy.ts: 13ms, application-code: 223ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 222ms (next.js: 20ms, proxy.ts: 54ms, application-code: 149ms)
+ GET /login 200 in 101ms (next.js: 4ms, proxy.ts: 7ms, application-code: 90ms)
+ GET /login 200 in 157ms (next.js: 22ms, proxy.ts: 16ms, application-code: 120ms)
+ GET /login 200 in 109ms (next.js: 5ms, proxy.ts: 7ms, application-code: 97ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 188ms (next.js: 4ms, proxy.ts: 9ms, application-code: 176ms)
+ GET /login 200 in 199ms (next.js: 73ms, proxy.ts: 26ms, application-code: 100ms)
+ GET /login 200 in 359ms (next.js: 92ms, proxy.ts: 64ms, application-code: 204ms)
+ GET /login 200 in 175ms (next.js: 20ms, proxy.ts: 46ms, application-code: 109ms)
+ GET /login 200 in 132ms (next.js: 8ms, proxy.ts: 19ms, application-code: 105ms)
+ GET /login 200 in 289ms (next.js: 79ms, proxy.ts: 12ms, application-code: 198ms)
+ GET /login 200 in 496ms (next.js: 26ms, proxy.ts: 49ms, application-code: 420ms)
+ GET / 307 in 341ms (next.js: 75ms, proxy.ts: 33ms, application-code: 233ms)
+ GET /dashboard 200 in 975ms (next.js: 67ms, proxy.ts: 17ms, application-code: 892ms)
+ GET /api/auth/session 200 in 2.4s (next.js: 2.3s, proxy.ts: 22ms, application-code: 53ms)
+ GET /api/auth/session 200 in 51ms (next.js: 17ms, proxy.ts: 17ms, application-code: 17ms)
+ GET / 307 in 118ms (next.js: 5ms, proxy.ts: 12ms, application-code: 100ms)
+ GET /dashboard 200 in 176ms (next.js: 4ms, proxy.ts: 13ms, application-code: 159ms)
+ GET /api/auth/session 200 in 42ms (next.js: 14ms, proxy.ts: 15ms, application-code: 13ms)
+ GET /api/auth/session 200 in 31ms (next.js: 7ms, proxy.ts: 11ms, application-code: 13ms)
+ GET /dashboard 200 in 171ms (next.js: 4ms, proxy.ts: 12ms, application-code: 155ms)
+ GET /api/auth/session 200 in 39ms (next.js: 14ms, proxy.ts: 10ms, application-code: 15ms)
+ GET /api/auth/session 200 in 38ms (next.js: 8ms, proxy.ts: 18ms, application-code: 13ms)
+ GET /dashboard/companies 200 in 1206ms (next.js: 1109ms, proxy.ts: 12ms, application-code: 85ms)
+ GET /dashboard/ai 200 in 838ms (next.js: 752ms, proxy.ts: 13ms, application-code: 73ms)
+✓ Compiled in 619ms
+ GET /dashboard/ai 200 in 741ms (next.js: 173ms, proxy.ts: 198ms, application-code: 370ms)
+ GET /dashboard/ai 200 in 239ms (next.js: 8ms, proxy.ts: 51ms, application-code: 180ms)
+ GET /dashboard/ai 200 in 169ms (next.js: 29ms, proxy.ts: 46ms, application-code: 95ms)
+ GET /login 200 in 469ms (next.js: 134ms, proxy.ts: 10ms, application-code: 325ms)
+ GET /login 200 in 148ms (next.js: 18ms, proxy.ts: 19ms, application-code: 111ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 151ms (next.js: 71ms, proxy.ts: 8ms, application-code: 72ms)
+ GET /login 200 in 183ms (next.js: 6ms, proxy.ts: 14ms, application-code: 163ms)
+ GET /login 200 in 192ms (next.js: 42ms, proxy.ts: 49ms, application-code: 100ms)
+ GET /login 200 in 155ms (next.js: 8ms, proxy.ts: 19ms, application-code: 128ms)
+ GET /login 200 in 254ms (next.js: 73ms, proxy.ts: 13ms, application-code: 169ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/login" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="login/page...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
+                <LoginPage params={Promise} searchParams={Promise}>
+                  <style>
+                  <div style={{position:"...", ...}}>
+                    <video>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div>
+                    <div style={{position:"...", ...}}>
+                      <div>
+                      <div ref={{current:null}} className="login-card" ...>
+                        <div>
+                        <div>
+                        <div style={{position:"...", ...}}>
+                          <form onSubmit={function handleSubmit} style={{display:"flex", ...}}>
+                            <div style={{position:"..."}}>
+                              <span>
+                              <input
+                                type="email"
+                                value=""
+                                onChange={function onChange}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                                required={true}
+                                className="login-input"
+-                               style={{caret-color:"transparent"}}
+                              >
+                            <div style={{position:"..."}}>
+                              <span>
+                              <input
+                                type="password"
+                                value=""
+                                onChange={function onChange}
+                                onFocus={function onFocus}
+                                onBlur={function onBlur}
+                                required={true}
+                                className="login-input"
+-                               style={{caret-color:"transparent"}}
+                              >
+                            ...
+                          ...
+                      ...
+            ...
+          ...
+ 
+ GET /login 200 in 196ms (next.js: 40ms, proxy.ts: 25ms, application-code: 131ms)
+ GET /login 200 in 83ms (next.js: 4ms, proxy.ts: 12ms, application-code: 67ms)
+ GET /login 200 in 193ms (next.js: 7ms, proxy.ts: 11ms, application-code: 176ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 166ms (next.js: 51ms, proxy.ts: 47ms, application-code: 68ms)
+ GET /dashboard/ai 200 in 681ms (next.js: 172ms, proxy.ts: 181ms, application-code: 328ms)
+ GET /dashboard/ai 200 in 830ms (next.js: 174ms, proxy.ts: 181ms, application-code: 475ms)
+ GET /login 200 in 374ms (next.js: 128ms, proxy.ts: 9ms, application-code: 238ms)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\ADMINI~1\AppData\Local\Temp\next-panic-28a6699ac7989c11cca4eed9d0181ce8.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A%0ACaused%20by%3A%0A-%20Next.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Flogin%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aapp_page_entry%20failed%0A-%20Execution%20of%20%2Aget_app_page_entry%20failed%0A-%20Execution%20of%20AppProject%3A%3Arsc_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20%2AAppProject%3A%3Aget_rsc_transitions%20failed%0A-%20Execution%20of%20AppProject%3A%3Aecmascript_client_reference_transition%20failed%0A-%20Execution%20of%20%2ANextEcmascriptClientReferenceTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Assr_module_context%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_transition%20failed%0A-%20Execution%20of%20%2AFullContextTransition%3A%3Anew%20failed%0A-%20Execution%20of%20AppProject%3A%3Ashared_module_context%20failed%0A-%20Execution%20of%20%2AModuleAssetContext%3A%3Anew%20failed%0A-%20Execution%20of%20get_server_resolve_options_context%20failed%0A-%20Execution%20of%20get_next_server_import_map%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+ GET /login 200 in 146ms (next.js: 8ms, proxy.ts: 12ms, application-code: 126ms)
+ GET /login 200 in 124ms (next.js: 10ms, proxy.ts: 11ms, application-code: 103ms)
+ GET /login 200 in 99ms (next.js: 5ms, proxy.ts: 12ms, application-code: 82ms)
+ GET /login 200 in 82ms (next.js: 5ms, proxy.ts: 7ms, application-code: 70ms)
+ GET /login 200 in 89ms (next.js: 8ms, proxy.ts: 13ms, application-code: 68ms)
+ GET /login 200 in 104ms (next.js: 4ms, proxy.ts: 7ms, application-code: 93ms)
+ GET /api/auth/session 200 in 203ms (next.js: 138ms, proxy.ts: 17ms, application-code: 48ms)
+ GET /api/auth/session 200 in 33ms (next.js: 8ms, proxy.ts: 12ms, application-code: 13ms)
+ GET /dashboard/ai 200 in 396ms (next.js: 5ms, proxy.ts: 14ms, application-code: 376ms)
+ GET /api/auth/session 200 in 46ms (next.js: 15ms, proxy.ts: 16ms, application-code: 15ms)
+ GET /api/auth/session 200 in 33ms (next.js: 7ms, proxy.ts: 15ms, application-code: 12ms)
+ GET /dashboard 200 in 118ms (next.js: 24ms, proxy.ts: 14ms, application-code: 79ms)
+ GET /dashboard 200 in 75ms (next.js: 4ms, proxy.ts: 15ms, application-code: 56ms)
+ GET / 307 in 180ms (next.js: 55ms, proxy.ts: 14ms, application-code: 111ms)
+ GET /dashboard 200 in 217ms (next.js: 4ms, proxy.ts: 12ms, application-code: 201ms)
+ GET /api/auth/session 200 in 47ms (next.js: 15ms, proxy.ts: 15ms, application-code: 16ms)
+ GET /api/auth/session 200 in 30ms (next.js: 6ms, proxy.ts: 12ms, application-code: 13ms)
+ GET /dashboard 200 in 162ms (next.js: 5ms, proxy.ts: 11ms, application-code: 146ms)
+ GET /api/auth/session 200 in 43ms (next.js: 14ms, proxy.ts: 15ms, application-code: 15ms)
+ GET /api/auth/session 200 in 37ms (next.js: 6ms, proxy.ts: 19ms, application-code: 12ms)
