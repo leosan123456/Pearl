@@ -27,10 +27,12 @@ model User {
   investmentStage  String?
   fundSize         Float?
   focusSectors     String?
-  stripeCustomerId String?       @unique
-  createdAt        DateTime      @default(now())
-  updatedAt        DateTime      @updatedAt
-  subscription     Subscription?
+  stripeCustomerId  String?        @unique
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  subscription      Subscription?
+  tokenBalances     TokenBalance[]
+  tokenTransactions TokenTransaction[]
 }
 
 model Subscription {
@@ -142,10 +144,50 @@ model ForecastRecord {
   company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
 }
 
+// ─── Tokens / Créditos ───────────────────────────────────────────────────────
+
+model TokenBalance {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenType     String   // "ai_analysis" | "intel_session" | "forecast"
+  balance       Int      @default(0)
+  totalGranted  Int      @default(0)
+  totalUsed     Int      @default(0)
+
+  // Recarga automática
+  autoRecharge          Boolean @default(false)
+  autoRechargeThreshold Int     @default(3)
+  autoRechargePackage   String  @default("small") // "small" | "medium" | "large"
+
+  // Cota mensal
+  monthlyQuota  Int      @default(0)
+  quotaResetAt  DateTime?
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([userId, tokenType])
+}
+
+model TokenTransaction {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenType    String
+  amount       Int      // positivo = crédito, negativo = débito
+  balanceAfter Int
+  type         String   // "quota_grant" | "usage" | "purchase" | "auto_recharge"
+  description  String?
+  referenceId  String?  // companyId, sessionId, stripePaymentId
+  createdAt    DateTime @default(now())
+}
+
 // ─── Intel / Pesquisa ─────────────────────────────────────────────────────────
 
 model IntelSession {
   id          String         @id @default(cuid())
+  userId      String?
   title       String
   status      String         @default("active")   // active | completed
   summary     String?

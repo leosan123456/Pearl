@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { checkBalance, consumeToken, triggerAutoRechargeIfNeeded } from "@/lib/tokens";
 
 const client = new Anthropic();
 
@@ -79,6 +80,7 @@ export async function POST(req: NextRequest) {
   const session = await auth();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
+  const userId = (session.user as { id: string }).id;
   const { sessionId, userMessage } = await req.json();
   if (!sessionId || !userMessage?.trim()) {
     return NextResponse.json({ error: "sessionId e userMessage são obrigatórios" }, { status: 400 });
@@ -104,6 +106,19 @@ export async function POST(req: NextRequest) {
   history.push({ role: "user", content: userMessage });
 
   const exchangeCount = history.filter(h => h.role === "user").length;
+
+  // Verificar token de intel_session apenas na 1ª mensagem da sessão
+  if (exchangeCount === 1) {
+    const { enough, balance } = await checkBalance(userId, "intel_session");
+    if (!enough) {
+      return NextResponse.json(
+        { error: "insufficient_tokens", tokenType: "intel_session", balance },
+        { status: 402 }
+      );
+    }
+    await consumeToken(userId, "intel_session", sessionId, "Sessão Intel iniciada");
+    triggerAutoRechargeIfNeeded(userId, "intel_session").catch(console.error);
+  }
 
   // Se for primeira mensagem, incluir contexto da pergunta inicial
   const contextualUser = exchangeCount === 1

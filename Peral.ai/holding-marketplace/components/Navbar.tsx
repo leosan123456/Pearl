@@ -2,6 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import { Bell, User } from "lucide-react";
+import TokenBalanceMini from "@/components/TokenBalanceMini";
 
 interface NavbarProps { title: string }
 
@@ -31,6 +32,9 @@ export default function Navbar({ title }: NavbarProps) {
 
       {/* Ações direita */}
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+
+        {/* Widget de tokens */}
+        <TokenBalanceMini />
 
         {/* Notificação */}
         <button style={{
