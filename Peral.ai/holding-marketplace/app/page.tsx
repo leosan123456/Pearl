@@ -88,7 +88,7 @@ const PLANS = [
       "Suporte por e-mail",
     ],
     cta: "Começar agora",
-    href: "/register",
+    href: "/register?plan=personal",
     featured: false,
   },
   {
@@ -108,7 +108,7 @@ const PLANS = [
       "Suporte prioritário 24h",
     ],
     cta: "Começar Business",
-    href: "/register",
+    href: "/register?plan=business",
     featured: true,
   },
 ];

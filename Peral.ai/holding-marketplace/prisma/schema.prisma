@@ -9,12 +9,12 @@ datasource db {
 }
 
 model User {
-  id               String   @id @default(cuid())
-  email            String   @unique
+  id               String        @id @default(cuid())
+  email            String        @unique
   name             String?
   password         String
-  role             String   @default("user")
-  profileCompleted Boolean  @default(false)
+  role             String        @default("user")
+  profileCompleted Boolean       @default(false)
   jobTitle         String?
   holdingName      String?
   mainSector       String?
@@ -27,8 +27,26 @@ model User {
   investmentStage  String?
   fundSize         Float?
   focusSectors     String?
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  stripeCustomerId String?       @unique
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  subscription     Subscription?
+}
+
+model Subscription {
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan                 String    // "personal" | "business"
+  status               String    // "trialing" | "active" | "past_due" | "canceled" | "unpaid"
+  stripeSubscriptionId String?   @unique
+  stripePriceId        String?
+  currentPeriodStart   DateTime?
+  currentPeriodEnd     DateTime?
+  trialEnd             DateTime?
+  cancelAtPeriodEnd    Boolean   @default(false)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
 }
 
 model Company {
