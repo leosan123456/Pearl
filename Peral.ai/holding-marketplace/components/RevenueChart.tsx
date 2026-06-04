@@ -1,12 +1,19 @@
 "use client";
 
 import { formatCurrency } from "@/lib/utils";
-import { RevenueRecord } from "@/types";
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
+interface ChartRecord {
+  id: string;
+  year: number;
+  month?: number | null;
+  amount: number;
+  currency: string;
+}
+
 interface Props {
-  records: RevenueRecord[];
+  records: ChartRecord[];
   currency: string;
 }
 

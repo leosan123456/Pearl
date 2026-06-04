@@ -59,7 +59,7 @@ async function upsertKeywords(
 ) {
   for (const kw of newKeywords) {
     const existing = await prisma.intelKeyword.findFirst({
-      where: { sessionId, keyword: { equals: kw.keyword, mode: "insensitive" } },
+      where: { sessionId, keyword: { equals: kw.keyword } },
     });
     if (existing) {
       await prisma.intelKeyword.update({
