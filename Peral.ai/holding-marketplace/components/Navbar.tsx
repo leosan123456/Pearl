@@ -1,8 +1,9 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import { Bell, User } from "lucide-react";
+import { User } from "lucide-react";
 import TokenBalanceMini from "@/components/TokenBalanceMini";
+import NotificationDropdown from "@/components/NotificationDropdown";
 
 interface NavbarProps { title: string }
 
@@ -33,20 +34,11 @@ export default function Navbar({ title }: NavbarProps) {
       {/* Ações direita */}
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
 
-        {/* Widget de tokens */}
+        {/* Widget de saldo de tokens */}
         <TokenBalanceMini />
 
-        {/* Notificação */}
-        <button style={{
-          width: 36, height: 36, borderRadius: 10, border: "none", cursor: "pointer",
-          background: "rgba(255,255,255,.04)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          transition: "all .15s",
-        }}
-        onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,.08)"; e.currentTarget.style.borderColor="rgba(255,255,255,.12)"; }}
-        onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,.04)"; }}>
-          <Bell size={15} color="rgba(255,255,255,.45)" strokeWidth={1.8} />
-        </button>
+        {/* Notificações em tempo real */}
+        <NotificationDropdown />
 
         {/* Divisor */}
         <div style={{ width: 1, height: 24, background: "rgba(255,255,255,.07)" }} />
@@ -59,7 +51,6 @@ export default function Navbar({ title }: NavbarProps) {
           border: "1px solid rgba(255,255,255,.07)",
           cursor: "default",
         }}>
-          {/* Avatar */}
           <div style={{
             width: 28, height: 28, borderRadius: 8, flexShrink: 0,
             background: "linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%)",

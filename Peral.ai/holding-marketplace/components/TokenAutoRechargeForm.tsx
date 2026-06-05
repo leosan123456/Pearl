@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Zap, Loader2 } from "lucide-react";
-import { TOKEN_LABELS, type TokenType, type PackageSize } from "@/lib/tokens";
+import { TOKEN_LABELS, type TokenType, type PackageSize } from "@/lib/token-types";
 
 interface Props {
   tokenType: TokenType;

@@ -1,25 +1,12 @@
 import { prisma } from "@/lib/prisma";
 import { stripe } from "@/lib/stripe";
 
-// ─── Tipos ────────────────────────────────────────────────────────────────────
-export type TokenType = "ai_analysis" | "intel_session" | "forecast";
-export type PackageSize = "small" | "medium" | "large";
-export type PlanKey = "personal" | "business" | "trialing";
+// ─── Re-exportar tipos/constantes client-safe de token-types ─────────────────
+export type { TokenType, PackageSize, PlanKey } from "@/lib/token-types";
+export { TOKEN_TYPES, TOKEN_LABELS, PLAN_QUOTAS, TOKEN_PACKAGES_META } from "@/lib/token-types";
 
-export const TOKEN_TYPES: TokenType[] = ["ai_analysis", "intel_session", "forecast"];
-
-export const TOKEN_LABELS: Record<TokenType, { label: string; description: string; icon: string }> = {
-  ai_analysis:   { label: "Análises de IA",    description: "Análises Claude por empresa", icon: "🤖" },
-  intel_session: { label: "Sessões Intel",      description: "Sessões de inteligência estratégica", icon: "💬" },
-  forecast:      { label: "Forecasts",          description: "Previsões de receita",        icon: "📈" },
-};
-
-// ─── Cotas mensais por plano ──────────────────────────────────────────────────
-export const PLAN_QUOTAS: Record<PlanKey, Record<TokenType, number>> = {
-  personal:  { ai_analysis: 20, intel_session: 5,   forecast: 5   },
-  business:  { ai_analysis: 500, intel_session: 100, forecast: 100 },
-  trialing:  { ai_analysis: 5,   intel_session: 2,   forecast: 2   },
-};
+import type { TokenType, PackageSize, PlanKey } from "@/lib/token-types";
+import { TOKEN_TYPES, TOKEN_LABELS, PLAN_QUOTAS } from "@/lib/token-types";
 
 // ─── Pacotes avulsos ──────────────────────────────────────────────────────────
 export const TOKEN_PACKAGES: Record<TokenType, Record<PackageSize, { qty: number; priceBrl: number; label: string; priceId: string }>> = {

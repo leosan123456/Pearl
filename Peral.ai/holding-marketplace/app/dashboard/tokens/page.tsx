@@ -3,7 +3,8 @@ import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import TokenBalanceCard from "@/components/TokenBalanceCard";
 import TokenAutoRechargeForm from "@/components/TokenAutoRechargeForm";
-import { getBalances, TOKEN_LABELS, type TokenType, type PackageSize } from "@/lib/tokens";
+import { getBalances, TOKEN_PACKAGES } from "@/lib/tokens";
+import { TOKEN_LABELS, type TokenType, type PackageSize } from "@/lib/token-types";
 import { prisma } from "@/lib/prisma";
 import { CheckCircle2, Info, ArrowUpRight, Clock } from "lucide-react";
 
@@ -91,11 +92,17 @@ export default async function TokensPage({
               ? Math.max(0, Math.ceil((b.quotaResetAt.getTime() - Date.now()) / 86_400_000))
               : null;
             const label = TOKEN_LABELS[b.tokenType as TokenType];
-            const packages = [
-              { size: "small",  qty: 0, priceBrl: 0, label: "Pequeno", hasPrice: false },
-              { size: "medium", qty: 0, priceBrl: 0, label: "Médio",   hasPrice: false },
-              { size: "large",  qty: 0, priceBrl: 0, label: "Grande",  hasPrice: false },
-            ];
+            const pkgDefs = TOKEN_PACKAGES[b.tokenType as TokenType] ?? {};
+            const packages = (["small", "medium", "large"] as PackageSize[]).map((size) => {
+              const p = pkgDefs[size];
+              return {
+                size,
+                qty:      p?.qty      ?? 0,
+                priceBrl: p?.priceBrl ?? 0,
+                label:    p?.label    ?? size,
+                hasPrice: !!p?.priceId && p.priceId.length > 0,
+              };
+            });
 
             return (
               <TokenBalanceCard
