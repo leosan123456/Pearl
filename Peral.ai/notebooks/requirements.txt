@@ -1,0 +1,39 @@
+# Pearl.AI — Forecasting Training Requirements
+# Instalar com: pip install -r requirements.txt
+
+# Core data science
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+
+# Time series forecasting
+prophet>=1.1.4
+neuralprophet>=0.9.0
+
+# Gradient boosting
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Deep learning (LSTM) — opcional, recomendado para Colab GPU
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Model serialization
+joblib>=1.3.0
+
+# API communication
+requests>=2.31.0
+
+# SQLite direct access (built-in no Python)
+# sqlite3  <- já incluso no Python
+
+# Jupyter
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+plotly>=5.15.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
