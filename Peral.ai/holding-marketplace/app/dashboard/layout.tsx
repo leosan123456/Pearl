@@ -1,13 +1,11 @@
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import Sidebar from "@/components/Sidebar";
 import SessionProvider from "@/components/SessionProvider";
 import ParallaxBg from "@/components/ParallaxBg";
 import { AlertTriangle } from "lucide-react";
-
-// Rotas de billing são sempre acessíveis, independente do status da assinatura
-const BILLING_PATHS = ["/dashboard/billing", "/dashboard/setup"];
 
 export default async function DashboardLayout({
   children,
@@ -18,6 +16,11 @@ export default async function DashboardLayout({
   if (!session) redirect("/login");
 
   const userId = (session.user as { id: string }).id;
+
+  // Ler o pathname atual (injetado pelo middleware)
+  const hdrs = await headers();
+  const pathname = hdrs.get("x-pathname") ?? "";
+  const isSetupPath = pathname.startsWith("/dashboard/setup");
 
   // Buscar usuário e assinatura em paralelo
   const [user, subscription] = await Promise.all([
@@ -31,7 +34,8 @@ export default async function DashboardLayout({
     }),
   ]);
 
-  if (!user?.profileCompleted) {
+  // Não redirecionar se já estiver no setup — evita loop infinito
+  if (!user?.profileCompleted && !isSetupPath) {
     redirect("/dashboard/setup");
   }
 

@@ -1,22 +1,183 @@
+
+> holding-marketplace@0.1.0 dev
+> next dev
+
 ▲ Next.js 16.2.6 (Turbopack)
 - Local:         http://localhost:3000
-- Network:       http://192.168.1.101:3000
+- Network:       http://192.168.1.100:3000
 - Environments: .env
-✓ Ready in 709ms
+✓ Ready in 1254ms
+⚠ Slow filesystem detected. The benchmark took 617ms. If C:\Users\Administrator\Documents\GitHub\Pearl\Peral.ai\holding-marketplace\.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
 
- GET / 200 in 4.1s (next.js: 3.0s, proxy.ts: 563ms, application-code: 551ms)
- GET / 200 in 203ms (next.js: 9ms, proxy.ts: 39ms, application-code: 156ms)
- GET /login 200 in 812ms (next.js: 734ms, proxy.ts: 23ms, application-code: 54ms)
- GET /api/auth/providers 200 in 2.1s (next.js: 2.0s, proxy.ts: 18ms, application-code: 36ms)
- GET /api/auth/csrf 200 in 52ms (next.js: 20ms, proxy.ts: 17ms, application-code: 15ms)
- POST /api/auth/callback/credentials? 200 in 444ms (next.js: 10ms, proxy.ts: 19ms, application-code: 414ms)
- GET /dashboard 200 in 1571ms (next.js: 1171ms, proxy.ts: 15ms, application-code: 385ms)
- GET /dashboard 200 in 221ms (next.js: 11ms, proxy.ts: 89ms, application-code: 121ms)
- GET /api/auth/session 200 in 66ms (next.js: 17ms, proxy.ts: 23ms, application-code: 25ms)
- GET /api/auth/session 200 in 41ms (next.js: 8ms, proxy.ts: 18ms, application-code: 14ms)
- GET /api/auth/session 200 in 43ms (next.js: 9ms, proxy.ts: 14ms, application-code: 20ms)
- GET /api/auth/session 200 in 42ms (next.js: 10ms, proxy.ts: 16ms, application-code: 16ms)
- GET /dashboard/companies 200 in 787ms (next.js: 701ms, proxy.ts: 15ms, application-code: 71ms)
- GET /dashboard/ai 200 in 601ms (next.js: 499ms, proxy.ts: 18ms, application-code: 84ms)
- GET /dashboard 200 in 87ms (next.js: 6ms, proxy.ts: 15ms, application-code: 66ms)
- GET /dashboard/companies 200 in 83ms (next.js: 6ms, proxy.ts: 16ms, application-code: 60ms)
+○ Compiling / ...
+
+
+#
+
+thread 'tokio-runtime-worker' (20536) panicked at C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-1.43.0\src\io\blocking.rs:76:46:
+OS can't spawn worker thread: O arquivo de paginação é muito pequeno para que esta operação seja concluída. (os error 1455)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+# Fatal error in , line 0
+
+
+#
+# Fatal error in , line 0
+# Out of memory: HashMap::Initialize
+#
+#
+#
+#FailureMessage Object: 000000BD35BFA960
+----- Native stack trace -----
+
+ 1: 00007FF79045A19B 
+ 2: 00007FF79034CCAF 
+ 3: 00007FF7912569C2 
+ 4: 00007FF790E1B583 
+ 5: 00007FF790E1AFD6 
+ 6: 00007FF790E1B2A1 
+ 7: 00007FF790E1B117 
+ 8: 00007FF7909DD601 
+ 9: 00007FF790A0344D 
+10: 00007FF790A165E5 
+11: 00007FF790A13AA2 
+12: 00007FF790A08280 
+13: 00007FF790A071CD 
+14: 00007FF790A135D1 
+15: 00007FF790A13AE0 
+16: 00007FF790A08280 
+17: 00007FF790A15AEB 
+18: 00007FF790A1511C 
+19: 00007FF790A14C63 
+20: 00007FF790A1673C 
+21: 00007FF790A13AA2 
+22: 00007FF790A08280 
+23: 00007FF790A1BD68 
+24: 00007FF790A1C242 
+25: 00007FF790A1134A 
+26: 00007FF790A103C3 
+27: 00007FF790A11BD4 
+28: 00007FF790A02B09 
+29: 00007FF790A16E4F 
+30: 00007FF7909FC5B2 
+31: 00007FF790D990CB 
+32: 00007FF790D9E6FB 
+33: 00007FF790E266AC 
+34: 00007FF790E261B4 
+35: 00007FF7903D6D0E 
+36: 00007FF790DF949E 
+37: 00007FF790DF909A 
+38: 00007FF790DF935F 
+39: 00007FF790DF91D0 
+40: 00007FF790EEDDDE 
+41: 00007FF790E5F480 
+42: 00007FF790E5F480 
+43: 00007FF790E5F480 
+44: 00007FF711034751 
+
+<--- Last few GCs --->
+
+
+<--- Last few GCs --->
+
+
+[28304:0000027E51BFB600]      332 ms: Scavenge 6.0 (7.2) -> 6.0 (10.2) MB, 1.82 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+<--- JS stacktrace --->
+[28304:0000027E51BFB600]      412 ms: Scavenge 8.4 (10.5) -> 7.4 (11.0) MB, 1.51 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+
+ 1: 00007FF79045A19B 
+<--- JS stacktrace --->
+ 2: 00007FF7903C9A68 
+
+ 3: 00007FF790E42FB1 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 4: 00007FF790E2C708 
+----- Native stack trace -----
+ 5: 00007FF790C8E1B0 
+
+ 6: 00007FF790C45FB3 
+ 1: 00007FF79045A19B 
+ 7: 00007FF790C97870 
+ 2: 00007FF7903C9A68 
+ 8: 00007FF790C8AED0 
+ 3: 00007FF790E42FB1 
+ 9: 00007FF790CA054A 
+ 4: 00007FF790E2C708 
+10: 00007FF790CA0DC7 
+ 5: 00007FF79090F014 
+11: 00007FF790CA99FE 
+ 6: 00007FF790B2E7C9 
+12: 00007FF790CBBEEC 
+ 7: 00007FF790BDB37E 
+13: 00007FF790D6A25B 
+ 8: 00007FF790BDB9E8 
+14: 00007FF790BDB0E8 
+ 9: 00007FF790BE5660 
+15: 00007FF790BE1E45 
+10: 00007FF790BC95ED 
+16: 00007FF790BC3551 
+11: 00007FF790BCF0A1 
+17: 00007FF790BBB7D6 
+12: 00007FF790BD43DC 
+18: 00007FF790BBC21E 
+13: 00007FF790BCD82A 
+19: 00007FF790D9B45E 
+14: 00007FF790BD0AAB 
+20: 00007FF790D93B62 
+15: 00007FF790BD41B2 
+21: 00007FF790D94752 
+16: 00007FF790BCD82A 
+22: 00007FF790D97BA5 
+17: 00007FF790BD0B39 
+23: 00007FF790D97474 
+18: 00007FF790BD3B22 
+24: 00007FF79097997E 
+19: 00007FF790BCD82A 
+25: 00007FF790EEDEDE 
+20: 00007FF790BD6C46 
+26: 00007FF790E60888 
+21: 00007FF790BCDE0B 
+27: 00007FF790F045D6 
+22: 00007FF790BCDCE4 
+28: 00007FF790E5F480 
+23: 00007FF790BD3AF2 
+29: 00007FF790E5D840 
+24: 00007FF790BCD82A 
+30: 00007FF790E5D43B 
+25: 00007FF790BD6C46 
+31: 00007FF790D0E418 
+26: 00007FF790BCC198 
+32: 00007FF790D0DD13 
+27: 00007FF790BCBAD1 
+33: 00007FF790E2223B 
+28: 00007FF790BBC030 
+34: 00007FF7903E9EEA 
+29: 00007FF790D94639 
+35: 00007FF790341F9E 
+30: 00007FF790D993DF 
+36: 00007FF79048C977 
+31: 00007FF790D9E6FB 
+37: 00007FF7902B6D9E 
+32: 00007FF790E266AC 
+38: 00007FF7902B1FA8 
+33: 00007FF790E261B4 
+39: 00007FF7904ADFDD 
+34: 00007FF7903D6D0E 
+40: 00007FF791679FF0 
+35: 00007FF790DF949E 
+41: 00007FFD47F37374 
+36: 00007FF790DF909A 
+42: 00007FFD49F5CC91 
+37: 00007FF790DF935F 
+38: 00007FF790DF91D0 
+39: 00007FF790EEDDDE 
+40: 00007FF790E5F480 
+41: 00007FF790E5F480 
+42: 00007FF790E5F480 
+43: 00007FF711033F51 
+[?25h

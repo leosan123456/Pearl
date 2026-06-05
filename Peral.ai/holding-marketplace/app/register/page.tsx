@@ -87,7 +87,8 @@ export default function RegisterPage() {
       body: JSON.stringify({ name, email, password, confirmPassword: confirm }),
     });
     setLoading(false);
-    const body = await res.json();
+    let body: { error?: string; success?: boolean } = {};
+    try { body = await res.json(); } catch { /* resposta sem corpo */ }
     if (!res.ok) { setError(body.error || "Falha ao criar a conta."); return; }
     setSuccess("Conta criada! Redirecionando...");
     setTimeout(() => router.push("/login?registered=1"), 1200);
